@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font:normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+      const frutasCadastradas = ["banana","maçã","morango"]
+      const frutas = ["banana", 2, {name: "Code Dojo"}, "maçã", "morango", true, "leo"];
+      const frutasValidas = [];
+
+
+for (let i = 0; i < frutas.length; i++){
+  for (let j = 0; j < frutasCadastradas.length; j++){
+    if (frutas[i] === frutasCadastradas[j] && frutas[i] === "banana"){
+      frutasValidas.push ({nome: frutas[i], quantity: 500})
+    } if (frutas[i] === frutasCadastradas[j] && frutas[i] === "maçã"){
+      frutasValidas.push ({nome: frutas[i], quantity: 300})
+    } if (frutas[i] === frutasCadastradas[j] && frutas[i] === "morango"){
+      frutasValidas.push ({nome: frutas[i], quantity: 100})
+    }
+  }
+} console.log(frutasValidas)
+    </script>
+</body>
+</html>
