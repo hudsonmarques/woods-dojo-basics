@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Function Code-Dojo</title>
+</head>
+<body>
+    <script>
+
+        /*Criar função que recebe um array de inteiros e retorna os valores > 20
+  Criar função que recebe um array de inteiros e retorna os valores < 20
+  Criar função que recebe um array de inteiros e recebe um { operador: '>', valor: 20 }
+
+  Desafio01
+  Criar função que cria um array com números aleatórios e retorna eles,
+  Essa função recebe os parâmetros: tamanho do array e range de aleatoriedade.
+
+  Desafio02
+  Criar uma função Pessoa que recebe o nome e idade
+  quero executar pessoa.sayName() e pessoa.sayAge()*/
+
+  /*const patient_1 = {name: "Paciente Um", 
+  aditional_data: {bood_type: "A+", mother_name: "Maria"}} 
+ const patient_2 = {name: "Paciente Dois", 
+   aditional_data: {bood_type: "O++",  
+   mother_name: "Ana"}} */
+
+   //(...props)
+ 
+
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+} const array = [];
+for (let i = 0 ; i <= 50 ; i++){
+  array.push(getRandom(0,50));
+}
+
+const arrayMaior = []
+const arrayMenor = []
+
+const bigger = getMaior();
+const minor = getMenor();
+
+function getMaior(){
+    for (let i = 0; i < array.length; i++){
+        if (array[i] > 20){
+            arrayMaior.push(array[i])
+        }
+    }
+    return arrayMaior
+} 
+function getMenor(){
+    for (let i = 0; i < array.length; i++){
+        if (array[i] < 20){
+            arrayMenor.push(array[i])
+        }
+    }
+    return arrayMenor
+}
+console.log(getMaior(array));
+
+    </script>
+</body>
+</html>

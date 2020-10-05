@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font:normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+      /*Queremos arrumar nosso array de frutas, retornando apenas frutas.
+Queremos criar cestas de frutas para doação. Temos 900 frutas sortidas, 
+dentre elas: "300 bananas", "300 maças", "300 morangos" -> Criar array com 300 bananas, 300 morangos...*/
+
+/*const frutasCadastradas = ["banana","maçã","morango"]
+const frutas = ["banana", 2, {name: "Code Dojo"}, "maçã", "morango", true, "leo"]
+
+const frutasValidas = []
+
+for (let i = 0; i < frutas.length; i++){
+  for (let j = 0; j < frutasCadastradas.length; j++){
+    if (frutas[i] === frutasCadastradas[j]){
+      frutasValidas.push(frutas[i])
+    }
+  }
+} console.log(frutasValidas)
+
+var cestaDeFrutas = []
+for (let i = 0; i <= 300; i++){
+  cestaDeFrutas.push(frutasValidas[0])
+} for (let i = 0; i < 300; i++){
+  cestaDeFrutas.push(frutasValidas[1])
+} for (let i = 0; i < 300; i++){
+  cestaDeFrutas.push(frutasValidas[2])
+} console.log(cestaDeFrutas)*/
+
+
+const frutasCadastradas = ["banana","maçã","morango"]
+const frutas = ["banana", 2, {name: "Code Dojo"}, "maçã", "morango", true, "leo"];
+const frutasValidas = [];
+
+for (let i = 0; i < frutas.length; i++){
+  for (let j = 0; j < frutasCadastradas.length; j++){
+    if (frutas[i] === frutasCadastradas[j]){
+      frutasValidas.push ({nome: frutas[i], quantity: 300});
+    }
+  }
+} console.log(frutasValidas)
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

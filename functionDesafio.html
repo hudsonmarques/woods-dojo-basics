@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 5 - Elabore um algoritmo que faça, com funções, as seguintes conversões de temperatura:
+        a) Fahrenheit para Celsius;
+        b) Fahrenheit para kelvin;
+        c) Celsius para Fahrenheit;
+        d) Celsius para Kelvin;
+        e) Kelvin para Celsius;
+        Obs.: Desenvolva uma função para cada conversão.*/
+
+
+function convert1(){
+    fahrenheit = window.prompt("digite o valor que quer converter de Fahrenheit para Celsius")
+    const celsius = (fahrenheit - 32) * (5/9);
+    console.log(celsius)
+}
+convert1();
+function convert2(){
+    fahrenheit = window.prompt("Digite o valor que quer converter de Fahrenheit para Kelvin")
+    const kelvin = ((fahrenheit - 32) *(5/9)) + 273.15;
+    console.log(kelvin)
+}
+convert2();
+function convert3(){
+    celsius = window.prompt("Digite o valor que quer converter de Celsius para Fahrenheit")
+    const fahrenheit = (celsius * (9/5)) + 32;
+    console.log(fahrenheit)
+}
+//convert3()
+function convert4(){
+    celsius = window.prompt("Digite o valor que quer converter de Celsius para Kelvin")
+    const kelvin = (parseInt(celsius)) + 273.15
+    console.log(kelvin)
+}
+convert4()
+function convert5(){
+    kelvin = window.prompt("Digite o valor que quer converter de Kelvin para Celsius")
+    const celsius = (kelvin - 273.15)
+    console.log(celsius)
+}
+convert5();
+    </script>
+</body>
+</html>

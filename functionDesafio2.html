@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de funções 2</title>
+</head>
+<body>
+    <script>
+
+/*  14. Elabore um programa que receba dois números e um síbolo correspondente a operação a ser 
+       feita (/,-,+ ou *). Crie uma função que receba estes dados e retorne o resultado do cálculo 
+       executado.
+    15. Escreva um algoritimo que receba três números. Elabore uma função que retorne o menor 
+       numero entre os digitados.
+    16. Crie um programa que receba valores para um vetor de inteiros de 10 posições. Elabore uma
+       função que retorne os valores do vetor em ordem crescente.
+    17. Elabore um algoritmo que receba os valores de um vetor de inteiros de 15 posições.
+       Crie uma função que calcule e retorne a soma destes valores.
+    18. Escreva um algoritmo que receba um vetor de inteiros de 5 posições. Crie uma função que 
+       retorne quais elementos deste vetor são divisíveis por 3.
+    19. Crie um algoritmo que receba um número inteiro. Escreva uma função que retorne 
+       se este valor é positivo ou negativo.*/
+
+  
+
+/*const calculateValues = calculate();
+
+
+function calculate(){
+   const valor1 = window.prompt("Digite o primeiro Valor:")
+   const operadores = window.prompt("digite o operador")
+   const valor2 = window.prompt("digite o Segundo Valor")
+    
+    if (operadores === "+"){
+      const results = (parseInt(valor1) + parseInt(valor2))
+      console.log(results)
+    }
+    else if (operadores === "-"){
+      const results = (valor1 - valor2)
+      console.log(results)
+    }
+    else if (operadores === "*"){
+       const results = (valor1 * valor2)
+       console.log(results)
+    }
+    else if (operadores === "/"){
+       const results = (valor1 / valor2)
+       console.log(results)
+    }
+    else {
+       window.alert("operador não identificado")
+       console.log("Atualize a pagina e tente novamente!!!")
+    }
+} */
+
+const menorQue = returnMenor();
+
+function returnMenor(){
+   const valores = [];
+   valores.push(window.prompt("Digite o primeiro valor!"))
+   valores.push(window.prompt("Digite o segundo valor!"))
+   valores.push(window.prompt("Digite o terceiro valor!"))
+   for (let i = 0; i < valores.length; i++){
+      if ( i < valores[i]){
+         console.log(i)
+      }
+   }
+}
+
+    </script>
+    
+</body>
+</html>
